@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscribete a A New Day</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/suscribe.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg" />
+  </head>
+
+  <body>
+    <header class="header__container">
+      <a
+        id="jumpToContent"
+        href="#main__content"
+        class="header__jumpToContent visually__hidden"
+        >Saltar a contenido principal</a
+      >
+
+      <div class="header__demonstration">
+        <span>THIS WEBSITE IS A NTT DEMONSTRATION</span>
+      </div>
+      <div class="header__logo">
+        <a href="./index.html">
+          <img
+            src="./assets/DarkLogo.svg"
+            alt="Ir a la página de inicio de A new day"
+          />
+        </a>
+      </div>
+
+      <nav class="nav__container">
+        <div class="nav__wrapper">
+          <ul class="nav__main">
+            <li class="nav__main--li">
+              <a class="nav__main--a" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav__main--li">
+              <a
+                class="nav__main--a nav__link--active"
+                aria-current="page"
+                href="./suscribe.html"
+                >Suscríbete</a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav__rrss">
+            <li class="nav__rrss--li">
+              <a class="nav__rrss--a" href="#"
+                ><img src="./assets/rrss/licon.svg" alt="Seguir en linkedin"
+              /></a>
+            </li>
+            <li class="nav__rrss--li">
+              <a class="nav__rrss--a" href="#"
+                ><img src="./assets/rrss/ticon.svg" alt="Seguir en twitter"
+              /></a>
+            </li>
+            <li class="nav__rrss--li">
+              <a class="nav__rrss--a" href="#"
+                ><img src="./assets/rrss/ficon.svg" alt="Seguir en facebook"
+              /></a>
+            </li>
+            <li class="nav__rrss--li">
+              <a class="nav__rrss--a" href="#"
+                ><img src="./assets/rrss/iicon.svg" alt="Seguir en instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__suscriptionBanner">
+        <a href="#">
+          <img
+            src="./assets/bpc.webp"
+            alt="Consigue 1 año gratis de contenido premium al suscribirte"
+          />
+        </a>
+      </div>
+    </header>
+
+    <div class="content__container">
+      <main id="main__content" class="main__container">
+        <h1 class="main__title--h1">
+          Suscribete para conocer las últimas noticias
+        </h1>
+
+        <div class="cols__wrapper">
+          <div>
+            <p>
+              <span class="boldText">Vive la cultura en primera persona con A NEW DAY</span>
+              Es el programa de ventajas en el que podrás disfruar de
+              experiencias culturales exclusivas como:
+            </p>
+            <img src="./assets/Suscription.webp" alt="" />
+          </div>
+
+          <form class="form__container" id="suscribeForm">
+            <p aria-hidden="true" class="boldText">
+              Los campos requeridos han sido marcados con 
+              <span class="form__required">*</span>
+            </p>
+
+            <div id="nombreCompleto__field" class="form__field">
+              <label class="field__label" for="nombreCompleto"
+                >Nombre completo
+                <span class="form__required" aria-hidden="true">*</span>
+              </label>
+              <input
+                class="field__input"
+                type="text"
+                id="nombreCompleto"
+                aria-required="true"
+                aria-describedby="nombreCompleto__hint"
+              />
+              <span class="form__field--helperText" id="nombreCompleto__hint"
+                >Introduzca su nombre y apellidos
+              </span>
+            </div>
+            <div id="correoElectronico__field" class="form__field">
+              <label class="field__label" for="correoElectronico"
+                >Correo electrónico
+                <span class="form__required" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="email"
+                class="field__input"
+                id="correoElectronico"
+                aria-required="true"
+                aria-describedby="correoElectronico__hint"
+              />
+              <span class="form__field--helperText" id="correoElectronico__hint"
+                >Utilice un formato de dirección de correo válido, como
+                ejemplo@dominio.com.
+              </span>
+            </div>
+            <div id="telefono__field" class="form__field">
+              <label class="field__label" for="telefono">Teléfono</label>
+              <input
+                class="field__input"
+                type="tel"
+                id="telefono"
+                aria-describedby="telefono__hint"
+              />
+              <span class="form__field--helperText" id="telefono__hint"
+                >Introduzca su teléfono sin espacios.
+              </span>
+            </div>
+
+            <fieldset class="fieldset__container">
+              <legend>Intereses</legend>
+              <div class="fieldset__wrapper">
+                <div class="fieldset__field">
+                  <input
+                    type="checkbox"
+                    id="accesibilidad"
+                    name="accesibilidad"
+                    value="Accesibilidad"
+                  />
+                  <label for="accesibilidad">Accesibilidad</label>
+                </div>
+                <div class="fieldset__field">
+                  <input
+                    type="checkbox"
+                    id="frontend"
+                    name="frontend"
+                    value="Front-end"
+                  />
+                  <label for="frontend">Front-end</label>
+                </div>
+                <div class="fieldset__field">
+                  <input
+                    type="checkbox"
+                    id="backend"
+                    name="backend"
+                    value="Back-end"
+                  />
+                  <label for="backend">Back-end</label>
+                </div>
+                <div class="fieldset__field">
+                  <input type="checkbox" id="cms" name="cms" value="CMS" />
+                  <label for="cms">CMS</label>
+                </div>
+                <div class="fieldset__field">
+                  <input
+                    type="checkbox"
+                    id="cloud"
+                    name="cloud"
+                    value="Cloud"
+                  />
+                  <label for="cloud">Cloud</label>
+                </div>
+                <div class="fieldset__field">
+                  <input
+                    type="checkbox"
+                    id="data-analytics"
+                    name="data-analytics"
+                    value="Data Analitycs"
+                  />
+                  <label for="data-analytics">Data Analitycs</label>
+                </div>
+                <div class="fieldset__field">
+                  <input
+                    type="checkbox"
+                    id="otros"
+                    name="otros"
+                    value="Otros"
+                  />
+                  <label for="otros">Otros</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <button type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer__container">
+      <div class="footer__wrapper">
+        <img
+          src="./assets/LightLogo.svg"
+          alt="A new day, a NTT DATA demo Logo"
+          class="footer__and"
+        />
+        <img
+          src="./assets/NTTDATALogo.png"
+          class="footer__nttLogo"
+          alt="NTT DATA Logo"
+        />
+      </div>
+    </footer>
+    <script type="text/javascript" src="./script/global.js"></script>
+    <script type="text/javascript" src="./script/suscribe.js"></script>
+  </body>
+</html>
