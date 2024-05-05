@@ -34,7 +34,7 @@
 .article__description,
 .main__title--description {
   font-size: 1rem;
-  color: var(--black-color);
+  color: #898989;
   padding: 10px 0;
   font-family: "Montserrat", sans-serif;
 }

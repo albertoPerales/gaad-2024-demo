@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suscribete a A New Day</title>
+    <title>Bienvenido a A New Day</title>
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/suscribe.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg" />
@@ -90,7 +90,9 @@
         <div class="cols__wrapper">
           <div>
             <p>
-              <span class="boldText">Vive la cultura en primera persona con A NEW DAY</span>
+              <span class="boldText"
+                >Vive la cultura en primera persona con A NEW DAY</span
+              >
               Es el programa de ventajas en el que podrás disfruar de
               experiencias culturales exclusivas como:
             </p>
@@ -98,52 +100,35 @@
           </div>
 
           <form class="form__container" id="suscribeForm">
-            <p aria-hidden="true" class="boldText">
-              Los campos requeridos han sido marcados con 
+            <p class="boldText">
+              Los campos requeridos han sido marcados con
               <span class="form__required">*</span>
             </p>
 
             <div id="nombreCompleto__field" class="form__field">
-              <label class="field__label" for="nombreCompleto"
+              <label class="field__label"
                 >Nombre completo
-                <span class="form__required" aria-hidden="true">*</span>
+                <span class="form__required">*</span>
               </label>
-              <input
-                class="field__input"
-                type="text"
-                id="nombreCompleto"
-                aria-required="true"
-                aria-describedby="nombreCompleto__hint"
-              />
+              <input class="field__input" type="text" id="nombreCompleto" />
               <span class="form__field--helperText" id="nombreCompleto__hint"
                 >Introduzca su nombre y apellidos
               </span>
             </div>
             <div id="correoElectronico__field" class="form__field">
-              <label class="field__label" for="correoElectronico"
+              <label class="field__label"
                 >Correo electrónico
-                <span class="form__required" aria-hidden="true">*</span>
+                <span class="form__required">*</span>
               </label>
-              <input
-                type="email"
-                class="field__input"
-                id="correoElectronico"
-                aria-required="true"
-                aria-describedby="correoElectronico__hint"
-              />
+              <input type="email" class="field__input" id="correoElectronico" />
               <span class="form__field--helperText" id="correoElectronico__hint"
                 >Utilice un formato de dirección de correo válido, como
                 ejemplo@dominio.com.
               </span>
             </div>
             <div id="telefono__field" class="form__field">
-              <label class="field__label" for="telefono">Teléfono</label>
-              <input
-                class="field__input"
-                type="tel"
-                id="telefono"
-                aria-describedby="telefono__hint"
-              />
+              <label class="field__label">Teléfono</label>
+              <input class="field__input" type="tel" id="telefono" />
               <span class="form__field--helperText" id="telefono__hint"
                 >Introduzca su teléfono sin espacios.
               </span>

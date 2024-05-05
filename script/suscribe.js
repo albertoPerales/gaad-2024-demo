@@ -15,7 +15,7 @@ suscribeForm.addEventListener("submit", (event) => {
 
   const firstErrorInput = document.querySelector(".form__field--error");
   if (firstErrorInput) {
-    firstErrorInput.parentElement.querySelector("input").focus();
+    firstErrorInput.parentElement.querySelector("input");
     return;
   }
 
@@ -112,7 +112,7 @@ const displayError = (errorId, inputElement, errorMessage) => {
   const errorContainerId = `${inputElement.id}__field`;
   const errorContainer = document.getElementById(errorContainerId);
   errorContainer.appendChild(errorElement);
-
+  
   // Añadir id del error al input
   const currentAriaDescribedby = inputElement.getAttribute("aria-describedby");
   let newAriaDescribedby = "";
@@ -121,9 +121,6 @@ const displayError = (errorId, inputElement, errorMessage) => {
   } else {
     newAriaDescribedby = errorId;
   }
-
-  inputElement.setAttribute("aria-describedby", newAriaDescribedby);
-  inputElement.setAttribute("aria-invalid", "true");
 };
 
 const createError = (errorId, errorMessage) => {
@@ -143,11 +140,9 @@ const createError = (errorId, errorMessage) => {
   errorElement.appendChild(errorText);
 
   errorElement.id = errorId;
-  errorElement.role = "alert";
 
   return errorElement;
 };
-
 
 const clearErrors = (containerElement) => {
   const errorElements = containerElement.querySelectorAll(
@@ -156,8 +151,10 @@ const clearErrors = (containerElement) => {
   errorElements.forEach((element) => {
     const inputElement = element.parentElement.querySelector("input");
     element.remove();
-    inputElement.setAttribute("aria-describedby", `${inputElement.id}__hint`);
-    inputElement.removeAttribute("aria-invalid");
+    if (inputElement) {
+      inputElement.setAttribute("aria-describedby", `${inputElement.id}__hint`);
+      inputElement.removeAttribute("aria-invalid");
+    }
   });
 };
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,81 +10,70 @@
   </head>
 
   <body>
-    <header class="header__container">
-      <a
-        id="jumpToContent"
-        href="#main__content"
-        class="header__jumpToContent visually__hidden"
-        >Saltar a contenido principal</a
-      >
-      
+    <div class="header__container">
       <div class="header__demonstration">
         <span>THIS WEBSITE IS A NTT DEMONSTRATION</span>
       </div>
 
       <div class="header__logo">
         <a href="#">
-          <img
-            src="./assets/DarkLogo.svg"
-            alt="Ir a la página de inicio de A new day"
-          />
+          <img src="./assets/DarkLogo.svg" />
         </a>
       </div>
 
-      <nav class="nav__container">
+      <div class="nav__container">
         <div class="nav__wrapper">
-          <ul class="nav__main">
-            <li class="nav__main--li">
-              <a class="nav__main--a nav__link--active"
-                aria-current="page"
-                href="./index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav__main--li">
-              <a class="nav__main--a" href="./suscribe.html">Suscríbete</a>
-            </li>
-          </ul>
+          <table>
+            <tbody class="nav__main">
+              <tr>
+                <td class="nav__main--li">
+                  <a class="nav__main--a nav__link--active" href="./index.html"
+                    >Inicio</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="nav__main--li">
+                  <a class="nav__main--a" href="./suscribe.html">Suscríbete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
           <ul class="nav__rrss">
             <li class="nav__rrss--li">
               <a class="nav__rrss--a" href="#"
-                ><img src="./assets/rrss/licon.svg" alt="Seguir en linkedin"
+                ><img src="./assets/rrss/licon.svg"
               /></a>
             </li>
             <li class="nav__rrss--li">
               <a class="nav__rrss--a" href="#"
-                ><img src="./assets/rrss/ticon.svg" alt="Seguir en twitter"
+                ><img src="./assets/rrss/ticon.svg"
               /></a>
             </li>
             <li class="nav__rrss--li">
-              <a class="nav__rrss--a" href="#"
-                ><img src="./assets/rrss/ficon.svg" alt="Seguir en facebook"
-              /></a>
+              <a class="nav__rrss--a" href="#">
+                <img src="./assets/rrss/ficon.svg" />
+              </a>
             </li>
             <li class="nav__rrss--li">
-              <a class="nav__rrss--a" href="#"
-                ><img
-                  src="./assets/rrss/iicon.svg"
-                  alt="Seguir en instagram"
-              /></a>
+              <a class="nav__rrss--a" href="#">
+                <img src="./assets/rrss/iicon.svg" />
+              </a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
 
       <div class="header__suscriptionBanner">
         <a href="#">
-          <img
-            src="./assets/bpc.webp"
-            alt="Consigue 1 año gratis de contenido premium al suscribirte"
-          />
+          <img src="./assets/bpc.webp" />
         </a>
       </div>
-    </header>
+    </div>
 
     <div class="content__container">
-      <main id="main__content" class="main__container">
+      <div id="main__content" class="main__container">
         <h1 class="main__title--h1">Bienvenido a A New Day</h1>
         <p class="main__title--description">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea libero
@@ -93,148 +82,113 @@
           minus dolor et.
         </p>
 
-        <section class="section__container">
-          <h2 class="section__title">NOTICIAS CANDENTES</h2>
-          <ul class="articles__wrapper">
-            <li>
-              <article>
-                <h3 class="article__title">
-                  <a href="#">NTT Data celebra el GAAD en Zaragoza</a>
-                </h3>
-                <p class="article__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatu.
-                </p>
-                <img
-                  class="section__article--img"
-                  src="./assets/Noticia1.webp"
-                  alt=""
-                />
-              </article>
-            </li>
-
-            <li>
-              <article>
-                <h3 class="article__title">
-                  <a href="#"
-                    >Apple da marcha atrás en la eliminación de las PWA en
-                    Europa</a
-                  >
-                </h3>
-                <p class="article__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatu.
-                </p>
-                <img
-                  class="section__article--img"
-                  src="./assets/Noticia2.webp"
-                  alt=""
-                />
-              </article>
-            </li>
-
-          </ul>
-        </section>
-
-        <section class="section__container">
-          <h2 class="section__title">ÚLTIMAS NOTICIAS</h2>
-          <ul class="articles__wrapper">
-            <li>
-              <article>
-                <h3 class="article__title">
-                  <a href="#">La W3C publica las WCAG 2.2</a>
-                </h3>
-                <p class="article__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatu.
-                </p>
-                <img
-                  class="section__article--img"
-                  src="./assets/Noticia3.webp"
-                  alt=""
-                />
-              </article>
-            </li>
-
-            <li>
-              <article>
-                <h3 class="article__title">
-                  <a href="#">Novedades de React 19</a>
-                </h3>
-                <p class="article__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatu.
-                </p>
-                <img
-                  class="section__article--img"
-                  src="./assets/Noticia4.webp"
-                  alt=""
-                />
-              </article>
-            </li>
-
-          </ul>
-        </section>
-      </main>
-
-      <aside class="aside__container">
-        <h2 class="aside__title">PUEDE INTERESARTE</h2>
-        <ul class="articles__wrapper">
-          <li>
-            <article>
-              <h3>
-                <a class="article__secondaryTitle" href="#"
-                  >Tecnologías más usadas de Javascript</a
-                >
+        <div class="section__container">
+          <h5 class="section__title">NOTICIAS CANDENTES</h5>
+          <div class="articles__wrapper">
+            <div>
+              <h3 class="article__title">
+                <a href="#">NTT Data celebra el GAAD en Zaragoza</a>
               </h3>
-              <p class="article__secondaryDescription">
-                En este artículo, exploraremos las tecnologías más utilizadas en
-                el ecosistema de JavaScript y cómo están impactando el
-                desarrollo web moderno. Desde los populares frameworks como
-                React.js, Vue.js y Angular.
+              <p class="article__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatu.
               </p>
-              <a class="link" href="#"
-                >Tecnologías de JS más usadas - Noticia completa</a
-              >
-            </article>
-          </li>
+              <img class="section__article--img" src="./assets/Noticia1.webp" />
+            </div>
 
-          <li>
-            <article>
-              <h3>
-                <a class="article__secondaryTitle" href="#"
+            <div>
+              <h3 class="article__title">
+                <a href="#"
                   >Apple da marcha atrás en la eliminación de las PWA en
                   Europa</a
                 >
               </h3>
-              <p class="article__secondaryDescription">
-                Tras las muchas amenazas por parte de Apple sobre la
-                compatibilidad de su navegador con las PWA, fnalmente no se
-                eliminará en la Unión Europea.
+              <p class="article__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatu.
               </p>
-              <a class="link" href="#"
-                >Celebración del GAAD - Noticia completa</a
+              <img class="section__article--img" src="./assets/Noticia2.webp" />
+            </div>
+          </div>
+        </div>
+
+        <div class="section__container">
+          <h5 class="section__title">ÚLTIMAS NOTICIAS</h5>
+          <div class="articles__wrapper">
+            <div>
+              <h3 class="article__title">
+                <a href="#">La W3C publica las WCAG 2.2</a>
+              </h3>
+              <p class="article__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatu.
+              </p>
+              <img class="section__article--img" src="./assets/Noticia3.webp" />
+            </div>
+
+            <div>
+              <h3 class="article__title">
+                <a href="#">Novedades de React 19</a>
+              </h3>
+              <p class="article__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatu.
+              </p>
+              <img class="section__article--img" src="./assets/Noticia4.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside__container">
+        <h5 class="aside__title">PUEDE INTERESARTE</h5>
+        <div class="articles__wrapper">
+          <div>
+            <h3>
+              <a class="article__secondaryTitle" href="#"
+                >Tecnologías más usadas de Javascript</a
               >
-            </article>
-          </li>
-        </ul>
-      </aside>
+            </h3>
+            <p class="article__secondaryDescription">
+              En este artículo, exploraremos las tecnologías más utilizadas en
+              el ecosistema de JavaScript y cómo están impactando el desarrollo
+              web moderno. Desde los populares frameworks como React.js, Vue.js
+              y Angular.
+            </p>
+            <a class="link" href="#">Ver más</a>
+          </div>
+
+          <div>
+            <h3>
+              <a class="article__secondaryTitle" href="#"
+                >Apple da marcha atrás en la eliminación de las PWA en Europa</a
+              >
+            </h3>
+            <p class="article__secondaryDescription">
+              Tras las muchas amenazas por parte de Apple sobre la
+              compatibilidad de su navegador con las PWA, finalmente no se
+              eliminarán en la Unión Europea.
+            </p>
+            <a class="link" href="#">Ver más</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="questionary__container">
@@ -242,21 +196,15 @@
         <p class="questionary__question">¿Te resulta esta página útil?</p>
 
         <div class="questionary_buttons">
-          <button class="questionary__button" onclick="showFeedback()">
-            Sí <span class="visually__hidden">,esta página me pareced útil</span>
-          </button>
-          <button class="questionary__button" onclick="showFeedback()">
-            No <span class="visually__hidden">,esta página no me pareced útil</span>
-          </button>
+          <div class="questionary__button" onclick="showFeedback()">Sí</div>
+          <div class="questionary__button" onclick="showFeedback()">No</div>
         </div>
 
-        <div class="questionary__feedback" role="alert">
-          Gracias por tu feedback
-        </div>
+        <div class="questionary__feedback">Gracias por tu feedback</div>
       </div>
     </div>
 
-    <footer class="footer__container">
+    <div class="footer__container">
       <div class="footer__wrapper">
         <img
           src="./assets/LightLogo.svg"
@@ -269,7 +217,7 @@
           alt="NTT DATA Logo"
         />
       </div>
-    </footer>
+    </div>
 
     <script type="text/javascript" src="./script/global.js"></script>
     <script type="text/javascript" src="./script/index.js"></script>

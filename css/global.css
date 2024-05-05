@@ -25,8 +25,7 @@
 }
 
 *:focus {
-  border: 2px solid var(--terciary-color) !important;
-  outline: 2px solid black;
+  outline: 2px solid var(--grey-light-color);
 }
 
 ul,

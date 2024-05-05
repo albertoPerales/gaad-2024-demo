@@ -1,13 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* Jump to content */
-  const jumpToContent = document.getElementById("jumpToContent");
-  jumpToContent.addEventListener("focus", () => {
-    this.classList.remove("visually__hidden");
-  });
-
-  jumpToContent.addEventListener("blur", () => {
-    this.classList.add("visually__hidden");
-  });
 
   /* Links */
   const menuLinks = document.querySelectorAll(".nav__main--a");
